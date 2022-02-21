@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:01": "tsc ./01_basics/index.ts"
+    "build:01": "tsc ./01_basics/index.ts",
+    "build:02": "tsc ./02_everyday_types/index.ts"
   },
   "author": "",
   "license": "ISC",
