@@ -75,3 +75,31 @@ function myForEach(arr: any[], callbackFn: (arg: any, index?: number) => void) {
         callbackFn(arr[i], i);
     }
 }
+
+myForEach([1, 2, 3], (a, i) => console.log(a));
+
+// Rest parameter
+
+function multiply(n: number, ...m: number[]) {
+    return m.map((x) => x * n);
+}
+
+const res = multiply(10, 1, 2, 3, 4);
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+arr1.push(...arr2);
+
+// Assignability of functions
+type voidFunc = () => void;
+
+const f1: voidFunc = () =>{
+    return true;
+};
+
+const f2: voidFunc = () => true;
+ 
+const f3: voidFunc = function () {
+  return true;
+};
